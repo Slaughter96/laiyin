@@ -1,0 +1,35 @@
+nav{
+    background-color: white !important;
+    padding-right: 60px;
+    border: none !important;
+    margin-top: 15px;
+}
+nav .menu{
+    margin-right: 350px !important;
+}
+nav .navbar-text{
+    margin-top: 5px;
+}
+.navbar-brand{
+    margin-left: 60px !important;
+}
+.navbar-brand img{
+    height: 35px;
+    margin-top: 0px;
+}
+.search-bar{
+    margin-top: -45px !important;
+}
+banner img{
+    margin-top: 30px;
+    width: 100%;
+}
+.center{
+    margin-top: 50px;
+}
+#company-name{
+    color: #40B5FD;
+}
+p{
+    color: #9A9A9A;
+}
