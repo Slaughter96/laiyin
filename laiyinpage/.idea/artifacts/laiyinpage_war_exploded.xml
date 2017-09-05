@@ -1,13 +1,17 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="laiyinpage:war exploded">
-    <output-path>$PROJECT_DIR$/../laiyinpage/out/artifacts/laiyinpage_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/laiyinpage_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="laiyinpage/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="laiyinpage" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="mysql-connector-java-5.1.39-bin" />
+          <element id="library" level="application" name="gwt-servlet.jar-2.3.2-redhat" />
+        </element>
       </element>
+      <element id="javaee-facet-resources" facet="laiyinpage/web/Web" />
     </root>
   </artifact>
 </component>

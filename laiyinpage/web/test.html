@@ -1,17 +1,4 @@
-<%@ page import="entity.ProductEntity" %>
-<%@ page import="java.util.List" %>
-<%@ page import="java.util.ArrayList" %><%--
-  Created by IntelliJ IDEA.
-  User: lb
-  Date: 2017/8/3
-  Time: 12:55
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%
-    String path = request.getContextPath();
-    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
+<!DOCTYPE html>
 <html>
 <head>
     <title>永康市莱尹进出口有限公司</title>
@@ -77,23 +64,79 @@
                 <div class="panel-heading"><span class="glyphicon glyphicon-list-alt"></span> Product Detail</div>
                 <div class="panel-body">
 
-                    <%
-                        List<ProductEntity> products = (ArrayList)request.getAttribute("productList");
-                        for(int i=0; i<products.size()&&i<=8; i++){
-                            ProductEntity product = products.get(i);
-                            out.println("<div class='col-lg-4'>");
-                            out.println("<img src='" + product.getImg() + "' class='product_pic'");
-                            out.println("</div>");
-                            if(i%3==0){
-                                for(int t=i; t>0; t--) {
-                                    out.println("<br>");
-                                    out.println("<div class='col-lg-4'>");
-                                    out.println("<span class='label label-info product_id'>" + product.getId() + "</span>");
-                                    out.println("</div>");
-                                }
-                            }
-                        }
-                    %>
+                    <div class="col-lg-4">
+                        <img src="img/img2.jpg" class="product_pic">
+                    </div>
+
+                    <div class="col-lg-4">
+                        <img src="img/img2.jpg" class="product_pic">
+                    </div>
+
+                    <div class="col-lg-4">
+                        <img src="img/img2.jpg" class="product_pic">
+                    </div>
+
+                    <br>
+
+                    <div class="col-lg-4">
+                        <span class="label label-info product_id">SCM3503</span>
+                    </div>
+                    <div class="col-lg-4">
+                        <span class="label label-info product_id">SCM3503</span>
+                    </div>
+                    <div class="col-lg-4">
+                        <span class="label label-info product_id">SCM3503</span>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <img src="img/img2.jpg" class="product_pic">
+                    </div>
+
+                    <div class="col-lg-4">
+                        <img src="img/img2.jpg" class="product_pic">
+                    </div>
+
+                    <div class="col-lg-4">
+                        <img src="img/img2.jpg" class="product_pic">
+                    </div>
+
+                    <br>
+
+                    <div class="col-lg-4">
+                        <span class="label label-info product_id">SCM3503</span>
+                    </div>
+                    <div class="col-lg-4">
+                        <span class="label label-info product_id">SCM3503</span>
+                    </div>
+                    <div class="col-lg-4">
+                        <span class="label label-info product_id">SCM3503</span>
+                    </div>
+
+
+
+                    <div class="col-lg-4">
+                        <img src="img/img2.jpg" class="product_pic">
+                    </div>
+
+                    <div class="col-lg-4">
+                        <img src="img/img2.jpg" class="product_pic">
+                    </div>
+
+                    <div class="col-lg-4">
+                        <img src="img/img2.jpg" class="product_pic">
+                    </div>
+
+                    <br>
+
+                    <div class="col-lg-4">
+                        <span class="label label-info product_id">SCM3503</span>
+                    </div>
+                    <div class="col-lg-4">
+                        <span class="label label-info product_id">SCM3503</span>
+                    </div>
+                    <div class="col-lg-4">
+                        <span class="label label-info product_id">SCM3503</span>
+                    </div>
 
                     <ul class="pagination">
                         <li><a href="#">←</a></li>

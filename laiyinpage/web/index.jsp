@@ -6,6 +6,11 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    String path = request.getContextPath();
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
 <html>
     <head>
         <title>永康市莱尹进出口有限公司</title>
@@ -60,7 +65,7 @@
                         <div class="panel-body">
                         </div>
                         <ul class="list-group">
-                            <li class="list-group-item"><a href="detail.jsp?itemid=1">CUT OFF MACHINE</a></li>
+                            <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=SCM3501">CUT OFF MACHINE</a></li>
                             <li class="list-group-item"><a href="">MARBLE CUTTER</a></li>
                             <li class="list-group-item">MITER SAW</li>
                             <li class="list-group-item">24*7 支持</li>

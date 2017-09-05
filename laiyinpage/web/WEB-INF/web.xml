@@ -3,4 +3,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    <servlet>
+        <description>This is the web servlet of laiyin company page</description>
+        <display-name>LaiYin</display-name>
+        <servlet-name>Servlet</servlet-name>
+        <servlet-class>web.Servlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Servlet</servlet-name>
+        <url-pattern>/Servlet</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
 </web-app>

@@ -9,13 +9,13 @@ public class Jdbc {
     public static Connection connect() throws ClassNotFoundException, SQLException {
         Connection conn = null;
         Class.forName("com.mysql.jdbc.Driver");
-        String url = "jdbc:mysql://localhost:3306/laiyin";
+        String url = "jdbc:mysql://localhost:3306/laiyin?useSSL=false";
         String username = "root";
         String password = "liangbin";
-        conn = DriverManager.getConnection(url, username, password);
+        conn = (Connection) DriverManager.getConnection(url, username, password);
         return conn;
     }
-    public void close (Statement stat, Connection conn) throws SQLException {
+    public static void close (Statement stat, Connection conn) throws SQLException {
         if (stat!=null){
             stat.close();
         }
