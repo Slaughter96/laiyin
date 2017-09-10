@@ -43,9 +43,9 @@
 
                 <div class="menu">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Products</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-globe"></span> About Us</a></li>
+                        <li class="active"><a href="index.jsp"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li><a href="<%=request.getContextPath()%>/Servlet?id=1"><span class="glyphicon glyphicon-shopping-cart"></span> Products</a></li>
+                        <li><a href="About%20Us.jsp"><span class="glyphicon glyphicon-globe"></span> About Us</a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-phone-alt"></span> Contact Us</a></li>
                     </ul>
                 </div>
@@ -63,14 +63,30 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading"><span class="glyphicon glyphicon-cog"></span> Products</div>
                         <div class="panel-body">
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=1">CUT OFF MACHINE</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=2">MARBLE CUTTER</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=3">MITER SAW</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=4">CORDLESS DRILL</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=5">CORE DRILL</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=6">DEMOLITION HAMMER</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=7">ELECTRIC DRILL</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=8">IMPACT DRILL</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=9">ROTARY HAMMER</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=10">ANGLE GRINDER</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=11">DIE GRINDER</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=12">MACHINE BY SETS</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=13">BELT SANDER</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=14">CIRCULAR SAW</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=15">ELECTRIC BLOWER</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=16">ELECTRIC PLANER</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=17">ELECTRIC TRIMMER</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=18">JIG SAW</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=19">ORBITAL SANDER</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=20">ROTARY LASER</a></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=21">ELECTRIC MIXER</a></li>
+                            </ul>
                         </div>
-                        <ul class="list-group">
-                            <li class="list-group-item"><a href="<%=request.getContextPath()%>/Servlet?id=SCM3501">CUT OFF MACHINE</a></li>
-                            <li class="list-group-item"><a href="">MARBLE CUTTER</a></li>
-                            <li class="list-group-item">MITER SAW</li>
-                            <li class="list-group-item">24*7 支持</li>
-                            <li class="list-group-item">每年更新成本</li>
-                        </ul>
                     </div>
                 </div>
                 <div class="col-lg-9">

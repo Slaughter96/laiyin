@@ -25,7 +25,7 @@ public class Servlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         response.setCharacterEncoding("utf-8");
         List<ProductEntity> products = null;
-        String id = request.getParameter("id");
+        int id = Integer.parseInt(request.getParameter("id"));
         try {
             products = new ProductDao().getProductPic(id);
             System.out.println("get ProductsList Successfully");
